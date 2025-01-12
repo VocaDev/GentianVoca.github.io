@@ -1,7 +1,7 @@
 let btn = document.querySelector("button");
 
 function onClick(){
-    window.open("Index.html");
+    window.open("index.html");
 }
 
 btn.addEventListener("click", onClick);
