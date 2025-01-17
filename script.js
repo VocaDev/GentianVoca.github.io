@@ -35,51 +35,51 @@ let rolls = document.getElementById("rr");
 
 
 vw.addEventListener("click", () => {
-    window.open("vw.html", "_blank");; 
+    window.open("vw.html");; 
 });
 
 opel.addEventListener("click", () => {
-    window.open("opel.html", "_blank");; 
+    window.open("opel.html");; 
 });
 
 kia.addEventListener("click", () => {
-    window.open("kia.html", "_blank");; 
+    window.open("kia.html");; 
 });
 
 pegueot.addEventListener("click", () => {
-    window.open("pegueot.html", "_blank");; 
+    window.open("pegueot.html");; 
 });
 
 fiat.addEventListener("click", () => {
-    window.open("fiat.html", "_blank");; 
+    window.open("fiat.html");; 
 });
 benz.addEventListener("click", () => {
-    window.open("mercedes.html", "_blank");; 
+    window.open("mercedes.html");; 
 });
 bmw.addEventListener("click", () => {
-    window.open("bmw.html", "_blank");; 
+    window.open("bmw.html");; 
 });
 maserati.addEventListener("click", () => {
-    window.open("maserati.html", "_blank");; 
+    window.open("maserati.html");; 
 });
 porsche.addEventListener("click", () => {
-    window.open("porsche.html", "_blank");; 
+    window.open("porsche.html");; 
 });
 
 audi.addEventListener("click", () => {
-    window.open("audi.html", "_blank");; 
+    window.open("audi.html");; 
 });
 ferrari.addEventListener("click", () => {
-    window.open("ferrari.html", "_blank");; 
+    window.open("ferrari.html");; 
 });
 lambo.addEventListener("click", () => {
-    window.open("lambo.html", "_blank");; 
+    window.open("lambo.html");; 
 });
 bentley.addEventListener("click", () => {
-    window.open("bentley.html", "_blank");; 
+    window.open("bentley.html");; 
 });
 rr.addEventListener("click", () => {
-    window.open("rollsroice.html", "_blank");; 
+    window.open("rollsroice.html");; 
 });
 
 
