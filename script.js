@@ -30,7 +30,7 @@ let porsche = document.getElementById("porsche");
 let audi = document.getElementById("audi");
 let ferrari = document.getElementById("ferrari");
 let lambo = document.getElementById("lambo");
-let bentley = document.getElementById("betley");
+let bentley = document.getElementById("bentley");
 let rolls = document.getElementById("rr");
 
 
@@ -65,7 +65,6 @@ maserati.addEventListener("click", () => {
 porsche.addEventListener("click", () => {
     window.open("porsche.html");; 
 });
-
 audi.addEventListener("click", () => {
     window.open("audi.html");; 
 });
