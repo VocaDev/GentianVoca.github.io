@@ -1,12 +1,47 @@
 body {
-    background-color: #f8f9fa;
+    background: url(bg2.jpg);
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-.form-container {
-    background: #fff;
+
+.container {
+    background: rgb(169, 169, 169, 0.9);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.review-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.review-name {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.table thead th {
+    background-color: #f1f1f1;
 }

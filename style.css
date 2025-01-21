@@ -12,7 +12,7 @@ body {
 /*NavBar*/
 #sideNav {
     width: 250px;
-    height: 450px;
+    height: 380px;
     position: fixed;
     right: -250px;
     top: 0;
@@ -28,6 +28,9 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
 }
 #menuBtn {
     text-align: center;
@@ -45,7 +48,7 @@ nav ul li a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), gray), url("Logos/bg2.webp");
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
     border-bottom: 3px solid black;
 }
 
@@ -119,13 +122,13 @@ nav ul li a {
 
 /* Daily Section */
 #daily {
-    background: url(Logos/bg3.jpg);
+    background-color: #A9A9A9;
     background-size: cover;
     border-bottom: 3px solid black;
 }
 
-#daily .section-header{
-    background-color: #f1f1f1;
+#daily .section-header h1{
+    color: white;
 }
 
 #baneri-kerre {
@@ -133,15 +136,19 @@ nav ul li a {
 }
 
 /* Sports Section */
-#sports {
-    background: url(Logos/sportbg.jpg);
+#sports{
+    background-color: #262626;
     background-position: center;
     background-size: cover;
     border-bottom: 3px solid black;
 }
 
+#sports .section-header h1{
+    color: white;
+}
+
 #sports .section-header p {
-    color: #f1f1f1;
+    color: white;
 }
 
 #sports .card {
@@ -162,40 +169,6 @@ nav ul li a {
     color: #fff;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .banneri-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .banneri-text p {
-        font-size: 1rem;
-    }
-
-    #baneri-kerre {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .banneri-text h1 {
-        font-size: 2rem;
-    }
-
-    .banneri-text p {
-        font-size: 0.9rem;
-    }
-
-    .container .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .card {
-        max-width: 80%;
-    }
-}
 
 .footer {
     background-color: black;
@@ -251,27 +224,11 @@ nav ul li a {
     padding-top: 10px;
 }
 
-@media (max-width: 768px) {
-#banner {
-    height: 600px;
-}
-.banner-text {
-    padding-top: 120px;
-}
-.banner-text h1 {
-    font-size: 50px;
-}
-.banner-text p {
-    font-size: 16px;
-}
-.banner-btn a {
-    width: 120px;
-    padding: 10px 0;
-    font-size: 14px;
-}
-#menuBtn {
-    right: 20px;
-}
+
+@media (max-width: 320px){
+    .banner-text {
+        margin-top: -40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -280,6 +237,7 @@ nav ul li a {
 }
 .banner-text {
     padding-top: 100px;
+    margin-top: -20px;
 }
 .banner-text h1 {
     font-size: 40px;
@@ -297,6 +255,45 @@ nav ul li a {
     top: 5%;
     left: 5%;
 }
+
+.footer-section h4 {
+    font-size: 18px;
+}
+.footer-section p {
+    font-size: 12px;
+}
+.footer-input {
+    padding: 8px;
+}
+.footer-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.social-icons a {
+    font-size: 18px;
+}
+.footer-bottom {
+    font-size: 12px;
+}
+}
+
+@media (max-width: 576px) {
+    .banneri-text h1 {
+        font-size: 2rem;
+    }
+
+    .banneri-text p {
+        font-size: 0.9rem;
+    }
+
+    .container .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -330,26 +327,38 @@ nav ul li a {
         gap: 10px;
     }
 }
+
+.banneri-text h1 {
+    font-size: 2.5rem;
 }
 
-@media (max-width: 480px) {
-    .footer-section h4 {
-        font-size: 18px;
-    }
-    .footer-section p {
-        font-size: 12px;
-    }
-    .footer-input {
-        padding: 8px;
-    }
-    .footer-btn {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-    .social-icons a {
-        font-size: 18px;
-    }
-    .footer-bottom {
-        font-size: 12px;
-    }
+.banneri-text p {
+    font-size: 1rem;
+}
+
+#baneri-kerre {
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner {
+    height: 600px;
+}
+.banner-text {
+    padding-top: 120px;
+}
+.banner-text h1 {
+    font-size: 50px;
+}
+.banner-text p {
+    font-size: 16px;
+}
+.banner-btn a {
+    width: 120px;
+    padding: 10px 0;
+    font-size: 14px;
+}
+#menuBtn {
+    right: 20px;
+}
 }
