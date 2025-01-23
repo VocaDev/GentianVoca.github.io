@@ -1,47 +1,82 @@
-body {
-    background: url(bg2.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+body{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), gray), url(bg2.jpg);
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container {
-    background: rgb(169, 169, 169, 0.9);
+
+.form-container {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-h2 {
+h2{
     color: white;
-    margin-bottom: 20px;
 }
 
 .review-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
     object-fit: cover;
 }
-.review-name {
-    display: flex;
-    align-items: center;
+
+#tabela{
+    background-color: black;
 }
 
 .table {
-    margin-top: 20px;
-    border: 1px solid #dee2e6;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.table th, .table td {
-    vertical-align: middle;
+
+.table-hover tbody tr:hover {
+    background-color: black;
+    cursor: pointer;
 }
-.table thead th {
-    background-color: #f1f1f1;
+
+
+.table-row:hover {
+    transform: scale(1.01);
+    background-color: black ;
 }
+
+.review-image {
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+td {
+    font-size: 0.95rem;
+}
+
+.text-warning {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 576px) {
+    .review-name {
+        font-size: 0.9rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.85rem;
+    }
+}
+

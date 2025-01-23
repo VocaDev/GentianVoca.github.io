@@ -77,7 +77,7 @@ lambo.addEventListener("click", () => {
 bentley.addEventListener("click", () => {
     window.open("bentley.html");; 
 });
-rr.addEventListener("click", () => {
+rolls.addEventListener("click", () => {
     window.open("rollsroice.html");; 
 });
 

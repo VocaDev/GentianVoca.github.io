@@ -11,43 +11,52 @@
 </head>
 <body>
 
-<div class="container mt-5">
-    <div class="">
-        <div class="col-md-6">
-            <h2>Checkout Form</h2>
-            <div class="form-container">
-                <form id="checkoutForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="departure-date" class="form-label">Booking Date</label>
-                        <input type="date" class="form-control" id="departure-date">
-                    </div>
-                    <div class="mb-3">
-                        <label for="departure-date" class="form-label">Return Date</label>
-                        <input type="date" class="form-control" id="departure-date">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+    <div class="container mt-5">
+        <!-- Forma -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <h2 class="text-center mb-4">Checkout Form</h2>
+                <div class="form-container">
+                    <form id="checkoutForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Name is required.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">Valid email is required.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                            <div class="invalid-feedback">Address is required.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="departure-date" class="form-label">Booking Date</label>
+                                <input type="date" class="form-control" id="departure-date" required>
+                                <div class="invalid-feedback">Booking date is required.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="return-date" class="form-label">Return Date</label>
+                                <input type="date" class="form-control" id="return-date" required>
+                                <div class="invalid-feedback">Return date is required.</div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Customer Reviews</h2>
-            <table class="table table-striped">
+    
+    <!-- Tabela -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Customer Reviews</h2>
+        <div class="table-responsive">
+            <table class="table align-middle table-secondary">
                 <thead>
                     <tr>
                         <th style="width: 30%;">Name</th>
@@ -57,26 +66,33 @@
                 </thead>
                 <tbody id="reviewsTable">
                     <tr>
-                        <td class="review-name">
-                            <img src="Phtos of Cars/pic1.webp" alt="Jane Doe" class="review-image">
-                            Jane Doe
+                        <td class="review-name d-flex align-items-center">
+                            <img src="Phtos of Cars/pic1.webp" alt="Jane Doe" class="review-image rounded-circle me-2" width="40" height="40">
+                            <span>Jane Doe</span>
                         </td>
                         <td>Great service!</td>
-                        <td>5/5 <i class="bi bi-star-fill"></i></td>
+                        <td>5/5 <i class="bi bi-star-fill text-warning"></i></td>
                     </tr>
                     <tr>
-                        <td class="review-name">
-                            <img src="Phtos of Cars/pic2.jpg" alt="John Smith" class="review-image">
-                            John Smith
+                        <td class="review-name d-flex align-items-center">
+                            <img src="Phtos of Cars/pic2.jpg" alt="John Smith" class="review-image rounded-circle me-2" width="40" height="40">
+                            <span>John Smith</span>
                         </td>
-                        <td>The cars quality is excellent.</td>
-                        <td>4/5 <i class="bi bi-star-fill"></i></td>
+                        <td>The car quality is excellent.</td>
+                        <td>4/5 <i class="bi bi-star-fill text-warning"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name d-flex align-items-center">
+                            <img src="nopic.webp" alt="Jane Doe" class="review-image rounded-circle me-2" width="40" height="40">
+                            <span>Mr. Belegu</span>
+                        </td>
+                        <td>Fast and correct service!</td>
+                        <td>5/5 <i class="bi bi-star-fill text-warning"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-</div>
 <script>
     document.getElementById('checkoutForm').addEventListener('submit', function(e) {
         e.preventDefault();
@@ -84,6 +100,7 @@
     });
 </script>
 
-
 </body>
 </html>
+
+
