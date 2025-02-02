@@ -44,7 +44,7 @@ nav ul li a:hover{
     filter: invert(1);
 }
 /* Banner Section */
-#title {
+#Lux-Rentals {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), gray), url("Logos/bg2.webp");
     background-size: cover;
     background-position: center;
