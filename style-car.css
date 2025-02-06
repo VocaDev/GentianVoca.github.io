@@ -3,13 +3,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a1a;
 }
-.header, .footer {
+.gv-header, .gv-footer {
     background-color: #343a40;
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
 .card {
+    background-color: white;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
@@ -18,18 +19,31 @@ body {
 .card:hover {
     transform: scale(1.05);
 }
-.btn-custom {
-    background-color: #007bff;
+.btn-primary {
+    background-color: #343a40;
     color: white;
+    border: #1a1a1a;
 }
-.btn-custom:hover {
-    background-color: #0056b3;
+.btn-primary:hover {
+    background-color: blue;
 }
-.card-img-top {
-    height: 200px;
+.gv-card-img-top {
+    border-radius: 5px 2px 0 0;
+    height: 150px;
+    width: auto;
     object-fit: cover;
-    size: cover;
 }
+
+.gv-card-title{
+    font-weight: 400;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gv-card-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 button{
     border-radius: 8px;
@@ -44,3 +58,5 @@ footer {
     text-align: center;
     margin-top: 35vh;
 }
+
+

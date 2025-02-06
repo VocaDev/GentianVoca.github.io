@@ -44,7 +44,7 @@ nav ul li a:hover{
     filter: invert(1);
 }
 /* Banner Section */
-#Lux-Rentals {
+#baneri {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), gray), url("Logos/bg2.webp");
     background-size: cover;
     background-position: center;
@@ -52,18 +52,18 @@ nav ul li a:hover{
     border-bottom: 3px solid black;
 }
 
-.banneri-text {
+.gv-banneri-text {
     text-align: center;
     color: #fff;
     padding-top: 170px;
 }
 
-.banneri-text h1 {
+.gv-banneri-text h1 {
     font-size: 80px;
     font-family: 'Bodoni Moda', serif;
     margin-top: -20px;
 }
-.banneri-text p {
+.gv-banneri-text p {
     font-size: 17px;
     color: #ffffff;
     font-family: 'Futura PT', sans-serif;
@@ -73,19 +73,19 @@ nav ul li a:hover{
 }
 
 /* Section Headers */
-.section-header h1 {
+.gv-section-header h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.section-header p {
+.gv-section-header p {
     font-size: 1.2rem;
     color: #666;
 }
 
 /* Cards */
-.card {
+.gv-card {
     border: 3px solid black;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -93,11 +93,12 @@ nav ul li a:hover{
     max-width: 320px;
 }
 
-.card img{
+.gv-card img{
     border-bottom: 1px solid black;
+    object-position: center;
 }
 
-.card:hover {
+.gv-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -106,18 +107,18 @@ nav ul li a:hover{
 .card-img-top {
     border-radius: 8px 8px 0 0;
     max-height: 200px;
-    object-fit: initial;
+    object-fit: fill;
 }
 
-.card-body {
+.gv-card-body {
     text-align: center;
     padding: 1rem;
 }
 
-.card-text {
+.gv-card-text {
     font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: gray;
 }
 
 /* Daily Section */
@@ -127,7 +128,15 @@ nav ul li a:hover{
     border-bottom: 3px solid black;
 }
 
-#daily .section-header h1{
+#daily .gv-card{
+    background-color: white;
+}
+
+#daily .gv-section-header h1{
+    color: gray;
+}
+
+#daily .gv-section-header p {
     color: white;
 }
 
@@ -143,15 +152,15 @@ nav ul li a:hover{
     border-bottom: 3px solid black;
 }
 
-#sports .section-header h1{
+#sports .gv-section-header h1{
+    color: gray;
+}
+
+#sports .gv-section-header p {
     color: white;
 }
 
-#sports .section-header p {
-    color: white;
-}
-
-#sports .card {
+#sports .gv-card {
     background: #ffffff;
 }
 
@@ -161,23 +170,31 @@ nav ul li a:hover{
     color: #fff;
 }
 
-#luxury .card {
+#luxury .gv-card {
     background: #222;
 }
 
-#luxury .card-text{
+#luxury .gv-card-text{
     color: #fff;
 }
 
+#luxury .gv-section-header h1{
+    color: gray;
+}
 
-.footer {
+#luxury .gv-section-header p {
+    color: white;
+}
+
+/*Footeri*/
+.gv-footer {
     background-color: black;
     color: #ffffff;
     padding: 30px 0;
     text-align: center;
     font-family: Arial, sans-serif;
 }
-.footer-container {
+.gv-footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -186,37 +203,39 @@ nav ul li a:hover{
     padding: 0 20px;
     gap: 20px;
 }
-.footer-section {
+.gv-footer-section {
     flex: 1;
     min-width: 250px;
     margin-bottom: 20px;
 }
-.footer-section h4 {
+
+.gv-footer-section h4 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.footer-section p {
+.gv-footer-section p {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
 }
 
-.social-icons {
+.gv-social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-.social-icons a {
+.gv-social-icons a {
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
     transition: color 0.3s ease-in-out; 
   }
 
-.footer-bottom {
+.gv-footer-bottom {
     margin-top: 20px;
     font-size: 14px;
     color: #ffffff;
@@ -226,7 +245,7 @@ nav ul li a:hover{
 
 
 @media (max-width: 320px){
-    .banner-text {
+    .gv-banner-text {
         margin-top: -40px;
     }
 }
@@ -235,54 +254,54 @@ nav ul li a:hover{
 #banner {
     height: 500px;
 }
-.banner-text {
+.gv-banner-text {
     padding-top: 100px;
     margin-top: -20px;
 }
-.banner-text h1 {
+.gv-banner-text h1 {
     font-size: 40px;
 }
-.banner-text p {
+.gv-banner-text p {
     font-size: 14px;
 }
-.banner-btn a {
+.gv-banner-btn a {
     width: 100px;
     padding: 8px 0;
     font-size: 12px;
 }
-.logo {
+.gv-logo {
     width: 80px;
     top: 5%;
     left: 5%;
 }
 
-.footer-section h4 {
+.gv-footer-section h4 {
     font-size: 18px;
 }
-.footer-section p {
+.gv-footer-section p {
     font-size: 12px;
 }
-.footer-input {
+.gv-footer-input {
     padding: 8px;
 }
-.footer-btn {
+.gv-footer-btn {
     padding: 8px 12px;
     font-size: 14px;
 }
-.social-icons a {
+.gv-social-icons a {
     font-size: 18px;
 }
-.footer-bottom {
+.gv-footer-bottom {
     font-size: 12px;
 }
 }
 
 @media (max-width: 576px) {
-    .banneri-text h1 {
+    .gv-banneri-text h1 {
         font-size: 2rem;
     }
 
-    .banneri-text p {
+    .gv-banneri-text p {
         font-size: 0.9rem;
     }
 
@@ -291,24 +310,24 @@ nav ul li a:hover{
         justify-content: center;
         align-items: center;
     }
-    .card {
+    .gv-card {
         max-width: 80%;
     }
 }
 
 @media (max-width: 1024px) {
-    .footer-container {
+    .gv-footer-container {
         padding: 0 15px;
     }
-    .footer-section {
+    .gv-footer-section {
         flex: 1 1 100%;
-        max-width: 500px;
+        max-width: auto;
         margin-bottom: 15px;
     }
-    .social-icons {
+    .gv-social-icons {
         justify-content: space-around;
     }
-    .footer{
+    .gv-footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -317,28 +336,28 @@ nav ul li a:hover{
 }
 
 @media (max-width: 768px) {
-    .footer-container {
+    .gv-footer-container {
         flex-direction: column;
         align-items: center;
         padding: 0 10px;
     }
-    .footer-section {
+    .gv-footer-section {
         text-align: center;
     
-    .footer-input {
+    .gv-footer-input {
         width: 100%;
     }
-    .social-icons {
+    .gv-social-icons {
         flex-wrap: wrap;
         gap: 10px;
     }
 }
 
-.banneri-text h1 {
+.gv-banneri-text h1 {
     font-size: 2.5rem;
 }
 
-.banneri-text p {
+.gv-banneri-text p {
     font-size: 1rem;
 }
 
@@ -350,16 +369,16 @@ nav ul li a:hover{
 #banner {
     height: 600px;
 }
-.banner-text {
+.gv-banner-text {
     padding-top: 120px;
 }
-.banner-text h1 {
+.gv-banner-text h1 {
     font-size: 50px;
 }
-.banner-text p {
+.gv-banner-text p {
     font-size: 16px;
 }
-.banner-btn a {
+.gv-banner-btn a {
     width: 120px;
     padding: 10px 0;
     font-size: 14px;
@@ -368,3 +387,10 @@ nav ul li a:hover{
     right: 20px;
 }
 }
+
+@media (min-width: 1440px){
+    #section1{
+        text-align: left;
+    }
+}
+
