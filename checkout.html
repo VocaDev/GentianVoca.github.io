@@ -47,7 +47,7 @@
                                 <div class="invalid-feedback">Return date is required.</div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                        <button type="submit" class="btn btn-success w-100" id="butoni">Submit</button>
                     </form>
                 </div>
             </div>
@@ -96,8 +96,7 @@
         </div>
     </div>
 <script>
-    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+    document.getElementById('butoni').addEventListener('click', function() {
         alert('Thank you for your purchase!');
     });
 </script>
