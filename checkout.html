@@ -96,8 +96,8 @@
         </div>
     </div>
 <script>
-    document.getElementById('checkoutForm').addEventListener('submit', function() {
-        this.preventDefault();
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+        e.preventDefault();
         alert('Thank you for your purchase!');
     });
 </script>
