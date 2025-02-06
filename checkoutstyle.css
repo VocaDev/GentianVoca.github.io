@@ -4,11 +4,11 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
 }
 
 
-.form-container {
+.gv-form-container {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -21,7 +21,7 @@ h2{
     color: white;
 }
 
-.review-image {
+.gv-review-image {
     object-fit: cover;
 }
 
@@ -38,7 +38,7 @@ h2{
     overflow: hidden;
 }
 
-.table-hover tbody tr:hover {
+.table:hover tbody tr:hover {
     background-color: black;
     cursor: pointer;
 }
@@ -49,7 +49,7 @@ h2{
     background-color: black ;
 }
 
-.review-image {
+.gv-review-image {
     object-fit: cover;
     border: 2px solid #ddd;
 }
@@ -64,13 +64,14 @@ td {
     font-size: 0.95rem;
 }
 
-.text-warning {
+.gv-text-warning {
     font-size: 1.2rem;
+    color: yellow;
 }
 
 
 @media (max-width: 576px) {
-    .review-name {
+    .gv-review-name {
         font-size: 0.9rem;
     }
 

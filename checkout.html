@@ -9,43 +9,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="checkoutstyle.css">
 </head>
-<body>
+<body id="Lux-Rentals">
+      <!--Arsyeja pse nuk kam vendos gv- para cdo klase eshte se 
+    Bootstrapi ka pas probeleme pastaj-->
 
-    <div class="gv container mt-5">
+    <div class="container mt-5">
         <!-- Forma -->
-        <div class="gv row justify-content-center">
-            <div class="gv col-lg-6 col-md-8 col-sm-12">
-                <h2 class="gv text-center mb-4">Checkout Form</h2>
-                <div class="gv form-container">
-                    <form id="checkoutForm" class="gv needs-validation" novalidate>
-                        <div class="gv mb-3">
-                            <label for="name" class="gv form-label">Name</label>
-                            <input type="text" class="gv form-control" id="name" placeholder="Enter your name" required>
-                            <div class="gv invalid-feedback">Name is required.</div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <h2 class="text-center mb-4">Checkout Form</h2>
+                <div class="gv-form-container">
+                    <form id="checkoutForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Name is required.</div>
                         </div>
-                        <div class="gv mb-3">
-                            <label for="email" class="gv form-label">Email</label>
-                            <input type="email" class="gv form-control" id="email" placeholder="Enter your email" required>
-                            <div class="gv invalid-feedback">Valid email is required.</div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">Valid email is required.</div>
                         </div>
-                        <div class="gv mb-3">
-                            <label for="address" class="gv form-label">Address</label>
-                            <textarea class="gv form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
-                            <div class="gv invalid-feedback">Address is required.</div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                            <div class="invalid-feedback">Address is required.</div>
                         </div>
-                        <div class="gv row">
-                            <div class="gv col-md-6 mb-3">
-                                <label for="departure-date" class="gv form-label">Booking Date</label>
-                                <input type="date" class="gv form-control" id="departure-date" required>
-                                <div class="gv invalid-feedback">Booking date is required.</div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="departure-date" class="form-label">Booking Date</label>
+                                <input type="date" class="form-control" id="departure-date" required>
+                                <div class="invalid-feedback">Booking date is required.</div>
                             </div>
-                            <div class="gv col-md-6 mb-3">
-                                <label for="return-date" class="gv form-label">Return Date</label>
-                                <input type="date" class="gv form-control" id="return-date" required>
-                                <div class="gv invalid-feedback">Return date is required.</div>
+                            <div class="col-md-6 mb-3">
+                                <label for="return-date" class="form-label">Return Date</label>
+                                <input type="date" class="form-control" id="return-date" required>
+                                <div class="invalid-feedback">Return date is required.</div>
                             </div>
                         </div>
-                        <button type="submit" class="gv btn btn-success w-100">Submit</button>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
                     </form>
                 </div>
             </div>
@@ -53,10 +55,10 @@
     </div>
     
     <!-- Tabela -->
-    <div class="gv container mt-5">
-        <h2 class="gv text-center mb-4">Customer Reviews</h2>
-        <div class="gv table-responsive">
-            <table class="gv table align-middle table-secondary">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Customer Reviews</h2>
+        <div class="table-responsive">
+            <table class="table align-middle table-secondary">
                 <thead>
                     <tr>
                         <th style="width: 30%;">Name</th>
@@ -66,36 +68,36 @@
                 </thead>
                 <tbody id="reviewsTable">
                     <tr>
-                        <td class="gv review-name d-flex align-items-center">
-                            <img src="Phtos of Cars/pic1.webp" alt="Jane Doe" class="gv review-image rounded-circle me-2" width="40" height="40">
+                        <td class="gv-review-name d-flex align-items-center">
+                            <img src="Phtos of Cars/pic1.webp" alt="Jane Doe" class="gv-review-image rounded-circle me-2" width="40" height="40">
                             <span>Jane Doe</span>
                         </td>
                         <td>Great service!</td>
-                        <td>5/5 <i class="gv bi bi-star-fill text-warning"></i></td>
+                        <td>5/5 <i class="bi bi-star-fill gv-text-warning"></i></td>
                     </tr>
                     <tr>
-                        <td class="gv review-name d-flex align-items-center">
-                            <img src="Phtos of Cars/pic2.jpg" alt="John Smith" class="gv review-image rounded-circle me-2" width="40" height="40">
+                        <td class="gv-review-name d-flex align-items-center">
+                            <img src="Phtos of Cars/pic2.jpg" alt="John Smith" class="gv-review-image rounded-circle me-2" width="40" height="40">
                             <span>John Smith</span>
                         </td>
                         <td>The car quality is excellent.</td>
-                        <td>4/5 <i class="gv bi bi-star-fill text-warning"></i></td>
+                        <td>4/5 <i class="bi bi-star-fill gv-text-warning"></i></td>
                     </tr>
                     <tr>
-                        <td class="gv review-name d-flex align-items-center">
-                            <img src="nopic.webp" alt="Jane Doe" class="gv review-image rounded-circle me-2" width="40" height="40">
+                        <td class="gv-review-name d-flex align-items-center">
+                            <img src="nopic.webp" alt="Jane Doe" class="gv-review-image rounded-circle me-2" width="40" height="40">
                             <span>Mr. Belegu</span>
                         </td>
                         <td>Fast and correct service!</td>
-                        <td>5/5 <i class="gv bi bi-star-fill text-warning"></i></td>
+                        <td>5/5 <i class="bi bi-star-fill gv-text-warning"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 <script>
-    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+    document.getElementById('checkoutForm').addEventListener('submit', function() {
+        this.preventDefault();
         alert('Thank you for your purchase!');
     });
 </script>
